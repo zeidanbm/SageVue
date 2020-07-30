@@ -1,0 +1,59 @@
+body,
+html {
+  font-size: 16px;
+  background-color: theme("colors.white.default");
+  font-family: "Tajawal", sans-serif;
+}
+
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+a:active,
+a:focus,
+button:active,
+button:focus {
+  outline: 0;
+  border: none;
+  outline-style: none;
+  -moz-outline-style: none;
+}
+
+/* Scrollbar Styling */
+.ich-scrollbar::-webkit-scrollbar,
+.autocomplete-suggestions::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: theme("colors.white.default");
+}
+
+.ich-scrollbar::-webkit-scrollbar-track,
+.autocomplete-suggestions::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: theme("colors.white.default");
+  border-radius: 10px;
+}
+
+.ich-scrollbar::-webkit-scrollbar-thumb,
+.autocomplete-suggestions::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, theme("colors.primary.light")),
+    color-stop(0.72, theme("colors.primary.default")),
+    color-stop(0.86, theme("colors.primary.dark"))
+  );
+}
+
+.ich-scrollbar::-webkit-scrollbar-button,
+.autocomplete-suggestions::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button {
+  display: none;
+}

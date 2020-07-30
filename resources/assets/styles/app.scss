@@ -1,0 +1,21 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/** Import variables */
+@import 'config/variables';
+
+/** Import theme styles */
+@import 'common/global';
+@import 'components/button';
+@import 'components/comments';
+@import 'components/forms';
+@import 'components/wp-classes';
+@import 'partials/header';
+@import 'partials/sidebar';
+@import 'partials/footer';
+@import 'partials/pages';
+@import 'partials/posts';
+@import 'partials/tinymce';

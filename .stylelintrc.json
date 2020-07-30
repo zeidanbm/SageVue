@@ -1,0 +1,55 @@
+{
+	"extends": ["stylelint-config-recommended-scss"],
+	"plugins": ["stylelint-scss"],
+	"rules": {
+		"max-nesting-depth": 4,
+		"indentation": "tab",
+		"number-leading-zero": null,
+		"declaration-colon-newline-after": null,
+		"value-list-comma-newline-after": null,
+		"no-empty-source": null,
+		"declaration-block-trailing-semicolon": null,
+		"no-descending-specificity": null,
+		"at-rule-empty-line-before": null,
+		"at-rule-no-unknown": null,
+		"property-no-unknown": [
+			true,
+			{
+				"ignoreProperties": ["user-drag", "font-smooth"]
+			}
+		],
+		"selector-pseudo-element-no-unknown": [
+			true,
+			{
+				"ignorePseudoElements": ["v-deep"]
+			}
+		],
+		"scss/at-rule-no-unknown": [
+			true,
+			{
+				"ignoreAtRules": [
+					"extend",
+					"at-root",
+					"debug",
+					"warn",
+					"error",
+					"if",
+					"else",
+					"for",
+					"each",
+					"while",
+					"mixin",
+					"include",
+					"content",
+					"return",
+					"tailwind",
+					"apply",
+					"responsive",
+					"variants",
+					"screen",
+					"function"
+				]
+			}
+		]
+	}
+}

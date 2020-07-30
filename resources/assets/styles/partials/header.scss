@@ -1,0 +1,47 @@
+.menu-item-logo a {
+  width: 103px !important;
+  height: 40px !important;
+  padding: 0;
+  background: url(/wp-content/uploads/2020/02/5.png) no-repeat center;
+  background-size: contain;
+  text-indent: -9999em;
+  border-top-width: 0 !important;
+
+  &:hover a,
+  &:active a,
+  &:focus a,
+  &:hover,
+  &:focus,
+  &:active,
+  a:hover,
+  a:focus,
+  a:active {
+    border-top: none !important;
+  }
+}
+
+.current-menu-item.menu-item-logo {
+  a {
+    border-bottom: 0;
+    padding: 0;
+  }
+}
+
+.menu-item-logo:hover {
+  a {
+    background-color: transparent !important;
+  }
+}
+
+.logo-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
